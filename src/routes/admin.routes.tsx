@@ -1,18 +1,16 @@
-import { ReactNode } from "react";
 import AdminDashboard from "../pages/admin/AdminDashboard";
 import CreateAdmin from "../pages/admin/CreateAdmin";
 import CreateFaculty from "../pages/admin/CreateFaculty";
-import { NavLink } from "react-router-dom";
 import CreateStudent from "../pages/admin/CreateStudent";
 /* type TRoute = {
   path: string;
   element: ReactNode;
 }; */
-type TSidebarItem = {
+/* type TSidebarItem = {
   key: string;
   label: ReactNode;
   children?: TSidebarItem[];
-};
+}; */
 export const adminPaths = [
   {
     name: "Dashboard",
@@ -40,7 +38,7 @@ export const adminPaths = [
     ],
   },
 ];
-export const adminSidebarItems = adminPaths.reduce(
+/* export const adminSidebarItems = adminPaths.reduce(
   (acc: TSidebarItem[], item) => {
     if (item.path && item.name) {
       acc.push({
@@ -61,7 +59,7 @@ export const adminSidebarItems = adminPaths.reduce(
     return acc;
   },
   []
-);
+); */
 
 // ! Programatical way
 /* export const adminRoutes = adminPaths.reduce((acc: TRoute[], item) => {
