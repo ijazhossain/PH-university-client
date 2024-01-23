@@ -9,7 +9,7 @@ import { TSidebarItem, TUserPath } from "../types";
   label: ReactNode;
   children?: TSidebarItem[];
 }; */
-export const sidebarItemsGenerator = (items: TUserPath[], role) => {
+export const sidebarItemsGenerator = (items: TUserPath[], role: string) => {
   const sidebarItems = items.reduce((acc: TSidebarItem[], item) => {
     if (item.path && item.name) {
       acc.push({
